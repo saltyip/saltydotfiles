@@ -13,10 +13,3 @@ vim.filetype.add({
     tsx = "typescriptreact",
   },
 })
-
-vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = { "*.js", "*.jsx", "*.ts", "*.tsx" },
-  callback = function()
-    require("conform").format({ async = false })
-  end,
-})

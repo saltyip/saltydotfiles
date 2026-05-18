@@ -34,8 +34,7 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.splitkeep = "cursor"
 --vim.opt.mouse = ""
-
--- Add asterisks in block comments
-vim.opt.formatoptions:append({ "r" })
+--dont auto format 
+vim.g.autoformat = false
 -- Disable automatic system clipboard sync (Wayland lag fix)
 vim.opt.clipboard = ""
