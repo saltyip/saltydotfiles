@@ -1,0 +1,31 @@
+# Font
+font-family = JetBrainsMono Nerd Font
+font-style = Regular
+font-size = 13
+font-thicken = true
+
+# Window
+window-decoration = false
+background-opacity = 0.95
+background-blur = true
+
+
+# Cursor
+cursor-style = bar
+cursor-style-blink = false
+
+# Shell
+shell-integration = fish
+
+# Behavior
+copy-on-select = clipboard
+mouse-hide-while-typing = true
+window-inherit-working-directory = true
+window-inherit-font-size = true
+clipboard-read = allow
+clipboard-write = allow
+link-url = true
+scrollback-limit = 10000
+
+# Colors
+config-file = ~/.cache/wal/ghostty-colors
