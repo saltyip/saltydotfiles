@@ -1,4 +1,5 @@
 #!/bin/bash
+
 while true; do
     inotifywait -e modify ~/.config/waypaper/config.ini
     sleep 0.3

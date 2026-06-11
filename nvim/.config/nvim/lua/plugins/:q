@@ -1,0 +1,17 @@
+return {
+  {
+    "zaldih/themery.nvim",
+    lazy = false,
+    config = function()
+      require("themery").setup({
+        themes = {
+          { name = "Kanagawa", colorscheme = "kanagawa" },
+          { name = "Oxocarbon", colorscheme = "oxocarbon" },
+          { name = "TokyoNight", colorscheme = "tokyonight" },
+          { name = "Catppuccin", colorscheme = "catppuccin" },
+          { name = "Rose Pine", colorscheme = "rose-pine" },
+        },
+      })
+    end,
+  },
+}
