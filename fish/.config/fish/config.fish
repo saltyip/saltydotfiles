@@ -19,6 +19,5 @@ cat ~/.cache/wal/sequences
 
 alias wallpaper="grep 'wallpaper = ' ~/.config/waypaper/config.ini | awk -F'/' '{print \$NF}'"
 
-#pgrep -f wal-watch.sh > /dev/null || bash /home/osleepy/.config/hypr/wal-watch.sh &
-
+zoxide init fish | source
 starship init fish | source
