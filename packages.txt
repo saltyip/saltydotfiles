@@ -15,8 +15,8 @@ blueman
 
 brightnessctl
 grimblast-git
-
 wl-clipboard
+
 pipewire
 pipewire-pulse
 wireplumber
@@ -24,9 +24,22 @@ wireplumber
 fastfetch
 btop
 yazi
+
 fuzzel
 rofi
 
 git
 stow
 tree
+zoxide
+
+nodejs
+npm
+python
+go
+
+ripgrep
+fd
+
+ttf-jetbrains-mono-nerd
+ttf-meslo-nerd
