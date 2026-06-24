@@ -15,7 +15,6 @@ function nudge_capture_hook --on-event fish_preexec
     end
 end
 
-cat ~/.cache/wal/sequences
 
 alias wallpaper="grep 'wallpaper = ' ~/.config/waypaper/config.ini | awk -F'/' '{print \$NF}'"
 

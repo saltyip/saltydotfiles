@@ -1,0 +1,98 @@
+@import url("file:///home/osleepy/.cache/wal/colors-waybar.css");
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+/* Pill background on every module */
+#workspaces,
+#clock,
+#memory,
+#battery,
+#backlight,
+#pulseaudio,
+#network,
+#tray {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 6px 3px;
+    padding: 0 12px;
+}
+
+#workspaces {
+    background-color: transparent;  /* remove pill from the whole workspaces module */
+    margin: 6px 3px;
+    padding: 0 4px;
+}
+
+#workspaces button {
+    padding: 0 10px;
+    color: @color8;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;          /* box, not pill */
+    margin: 0 2px;
+    min-width: 28px;
+}
+
+#workspaces button.active {
+    color: @color7;
+    background: rgba(0, 0, 0, 0.7);   /* slightly darker when active */
+    border-bottom: 2px solid @color4;
+}
+
+#clock {
+    color: @color6;
+    padding: 0 10px;
+}
+
+#memory {
+    color: @color2;
+    padding: 0 10px;
+}
+
+#battery {
+    color: @color5;
+    padding: 0 10px;
+}
+
+#backlight {
+    color: @color3;
+    padding: 0 10px;
+}
+
+#pulseaudio {
+    color: @color4;
+    padding: 0 10px;
+}
+
+#network {
+    color: @color6;
+    padding: 0 10px;
+}
+
+#tray {
+    padding: 0 10px;
+}
+
+#battery.warning {
+    color: @color1;
+}
+
+#battery.critical {
+    color: @color3;
+}
+
+#pulseaudio.muted {
+    color: @color8;
+}
+
+#network.disconnected {
+    color: @color3;
+}

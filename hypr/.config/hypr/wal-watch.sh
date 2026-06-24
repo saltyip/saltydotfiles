@@ -1,9 +1,14 @@
 #!/bin/bash
 
-while true; do
-    inotifywait -e modify ~/.config/waypaper/config.ini
-    sleep 0.3
-    WALLPAPER=$(grep 'wallpaper = ' ~/.config/waypaper/config.ini | cut -d' ' -f3 | sed 's|~|/home/osleepy|')
-    wal -i "$WALLPAPER" --backend haishoku
-    hyprctl keyword general:col.active_border "rgba($(cat ~/.cache/wal/colors | sed -n '2p' | tr -d '#')ff)"
-done
+WALLPAPER=$(grep '^wallpaper =' ~/.config/waypaper/config.ini | cut -d'=' -f2- | xargs)
+WALLPAPER="${WALLPAPER/#\~/$HOME}"
+
+wallust run "$WALLPAPER"
+
+# Small delay to ensure wallust finishes writing templates
+sleep 0.2
+
+# Reload Ghostty config so new windows pick up the new colors silently
+killall -q -SIGUSR2 ghostty || true
+
+hyprctl reload

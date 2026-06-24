@@ -1,0 +1,19 @@
+backend = "fastresize"
+
+color_space = "lch"
+palette = "dark"
+
+check_contrast = true
+min_contrast = 5.0
+saturation = 40
+
+[templates]
+
+ghostty = { 
+    template = "ghostty.conf",
+    target = "~/.cache/wallust/ghostty.conf"
+}
+hyprland = {
+    template = "hyprland.conf",
+    target = "~/.cache/wallust/hyprland.conf"
+}
